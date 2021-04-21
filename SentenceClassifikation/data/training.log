@@ -1,0 +1,51 @@
+2021-04-17 23:31:21,977 ----------------------------------------------------------------------------------------------------
+2021-04-17 23:31:21,978 Model: "TextClassifier(
+  (document_embeddings): DocumentRNNEmbeddings(
+    (embeddings): StackedEmbeddings(
+      (list_embedding_0): WordEmbeddings('de')
+      (list_embedding_1): FlairEmbeddings(
+        (lm): LanguageModel(
+          (drop): Dropout(p=0.25, inplace=False)
+          (encoder): Embedding(275, 100)
+          (rnn): LSTM(100, 2048)
+          (decoder): Linear(in_features=2048, out_features=275, bias=True)
+        )
+      )
+      (list_embedding_2): FlairEmbeddings(
+        (lm): LanguageModel(
+          (drop): Dropout(p=0.25, inplace=False)
+          (encoder): Embedding(275, 100)
+          (rnn): LSTM(100, 2048)
+          (decoder): Linear(in_features=2048, out_features=275, bias=True)
+        )
+      )
+    )
+    (word_reprojection_map): Linear(in_features=4396, out_features=256, bias=True)
+    (rnn): GRU(256, 512, batch_first=True)
+    (dropout): Dropout(p=0.5, inplace=False)
+  )
+  (decoder): Linear(in_features=512, out_features=4, bias=True)
+  (loss_function): BCEWithLogitsLoss()
+  (beta): 1.0
+  (weights): None
+  (weight_tensor) None
+)"
+2021-04-17 23:31:21,984 ----------------------------------------------------------------------------------------------------
+2021-04-17 23:31:21,984 Corpus: "Corpus: 153783 train + 19223 dev + 19222 test sentences"
+2021-04-17 23:31:21,985 ----------------------------------------------------------------------------------------------------
+2021-04-17 23:31:21,985 Parameters:
+2021-04-17 23:31:21,985  - learning_rate: "0.1"
+2021-04-17 23:31:21,985  - mini_batch_size: "32"
+2021-04-17 23:31:21,986  - patience: "3"
+2021-04-17 23:31:21,986  - anneal_factor: "0.5"
+2021-04-17 23:31:21,986  - max_epochs: "10"
+2021-04-17 23:31:21,987  - shuffle: "True"
+2021-04-17 23:31:21,987  - train_with_dev: "False"
+2021-04-17 23:31:21,987  - batch_growth_annealing: "False"
+2021-04-17 23:31:21,987 ----------------------------------------------------------------------------------------------------
+2021-04-17 23:31:21,988 Model training base path: "data"
+2021-04-17 23:31:21,988 ----------------------------------------------------------------------------------------------------
+2021-04-17 23:31:21,988 Device: cpu
+2021-04-17 23:31:21,989 ----------------------------------------------------------------------------------------------------
+2021-04-17 23:31:21,989 Embeddings storage mode: cpu
+2021-04-17 23:31:21,995 ----------------------------------------------------------------------------------------------------
